@@ -18,7 +18,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://jitpack.io") {
-            content { includeGroup("com.github.MetrolistGroup.quackjs") }
+            content { includeGroup("com.github.MuzikGroup.quackjs") }
         }
     }
 }
@@ -27,7 +27,7 @@ rootProject.name = "innertubex"
 if (providers.gradleProperty("useLocalQuackJS").isPresent) {
     includeBuild("../quackjs") {
         dependencySubstitution {
-            substitute(module("com.github.MetrolistGroup.quackjs:quackjs")).using(project(":"))
+            substitute(module("com.github.MuzikGroup.quackjs:quackjs")).using(project(":"))
         }
     }
 }
