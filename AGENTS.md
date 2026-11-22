@@ -4,7 +4,7 @@ This repository contains the reusable Android/JVM KMP InnerTubeX client, cipher/
 
 ## Boundaries
 
-- Do not depend on Metrolist application modules, models, settings, logging, playback engines, or UI.
+- Do not depend on Muzik application modules, models, settings, logging, playback engines, or UI.
 - Keep host integration behind library-owned interfaces such as `InnerTubeLogger` and `PlayerConfigRepository`.
 - Never log cookies, auth values, PO tokens, signed media URLs, media titles, or account identifiers.
 - Never attach credentials to a caller-provided URL without validating its scheme, host, and endpoint path.

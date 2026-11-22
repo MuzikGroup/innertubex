@@ -6,6 +6,14 @@ that `0.x` releases may contain breaking API changes.
 
 ## [Unreleased]
 
+## [0.12.0-muzik.1] - 2026-11-23
+
+### Changed
+
+- **Breaking:** the Kotlin package was renamed from `com.metrolist.innertubex` to
+  `com.muzik.innertubex`. Update every `import` in consumer projects; the wire
+  behavior and API surface are unchanged.
+
 ## [0.11.9] - 2026-11-17
 
 ### Fixed

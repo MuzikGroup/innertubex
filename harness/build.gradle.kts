@@ -6,7 +6,7 @@ plugins {
 }
 
 kotlin { jvmToolchain(21) }
-application { mainClass.set("com.metrolist.innertubex.harness.MainKt") }
+application { mainClass.set("com.muzik.innertubex.harness.MainKt") }
 
 dependencies {
     implementation(project(":", configuration = "desktopRuntimeElements"))

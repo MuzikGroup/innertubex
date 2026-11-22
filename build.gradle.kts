@@ -20,7 +20,7 @@ version = providers.gradleProperty("VERSION_NAME").get()
 
 kotlin {
     android {
-        namespace = "com.metrolist.innertubex"
+        namespace = "com.muzik.innertubex"
         compileSdk =
             libs.versions.compileSdk
                 .get()
@@ -125,7 +125,7 @@ mavenPublishing {
             "Extended Android and JVM Kotlin Multiplatform client for YouTube's InnerTube APIs, SABR audio/video, and player cipher deobfuscation.",
         )
         inceptionYear.set("2026")
-        url.set("https://github.com/MetrolistGroup/innertubex")
+        url.set("https://github.com/MuzikGroup/innertubex")
 
         licenses {
             license {
@@ -137,21 +137,21 @@ mavenPublishing {
 
         developers {
             developer {
-                id.set("metrolistgroup")
-                name.set("Metrolist contributors")
-                url.set("https://github.com/MetrolistGroup")
+                id.set("muzikgroup")
+                name.set("Muzik contributors")
+                url.set("https://github.com/MuzikGroup")
             }
         }
 
         scm {
-            url.set("https://github.com/MetrolistGroup/innertubex")
-            connection.set("scm:git:git://github.com/MetrolistGroup/innertubex.git")
-            developerConnection.set("scm:git:ssh://git@github.com/MetrolistGroup/innertubex.git")
+            url.set("https://github.com/MuzikGroup/innertubex")
+            connection.set("scm:git:git://github.com/MuzikGroup/innertubex.git")
+            developerConnection.set("scm:git:ssh://git@github.com/MuzikGroup/innertubex.git")
         }
 
         issueManagement {
             system.set("GitHub")
-            url.set("https://github.com/MetrolistGroup/innertubex/issues")
+            url.set("https://github.com/MuzikGroup/innertubex/issues")
         }
     }
 }

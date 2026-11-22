@@ -1,7 +1,7 @@
 # InnerTubeX
 
-[![CI](https://github.com/MetrolistGroup/innertubex/actions/workflows/ci.yml/badge.svg)](https://github.com/MetrolistGroup/innertubex/actions/workflows/ci.yml)
-[![JitPack](https://jitpack.io/v/MetrolistGroup/innertubex.svg)](https://jitpack.io/#MetrolistGroup/innertubex)
+[![CI](https://github.com/MuzikGroup/innertubex/actions/workflows/ci.yml/badge.svg)](https://github.com/MuzikGroup/innertubex/actions/workflows/ci.yml)
+[![JitPack](https://jitpack.io/v/MuzikGroup/innertubex.svg)](https://jitpack.io/#MuzikGroup/innertubex)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
 
 InnerTubeX is an extended Android, JVM, and iOS Kotlin Multiplatform client for
@@ -10,7 +10,7 @@ playlist, and player operations while adding:
 
 - SABR/UMP audio and video streaming with seekable segmented sources.
 - SABR video representation selection for host video playback.
-- Kotlin-only player cipher deobfuscation through hosted [QuackJS](https://github.com/MetrolistGroup/quackjs).
+- Kotlin-only player cipher deobfuscation through hosted [QuackJS](https://github.com/MuzikGroup/quackjs).
 - Optional validated Faraday landmarks, hint-free discovery, and bounded compiled-player caches.
 - Isolated authenticated sessions with generation-safe cancellation.
 - Channel discovery, account switching support, and streaming music uploads.
@@ -24,7 +24,7 @@ InnerTubeX powers YouTube API access and stream extraction in a growing number o
 
 | Project | Stars | Downloads |
 | --- | --- | --- |
-| [Metrolist](https://github.com/MetrolistGroup/Metrolist) | ![Stars](https://img.shields.io/github/stars/MetrolistGroup/Metrolist) | ![Downloads](https://img.shields.io/github/downloads/MetrolistGroup/Metrolist/total) |
+| [Muzik](https://github.com/MuzikGroup/Muzik) | ![Stars](https://img.shields.io/github/stars/MuzikGroup/Muzik) | ![Downloads](https://img.shields.io/github/downloads/MuzikGroup/Muzik/total) |
 | [BitChord](https://github.com/kushagrasinghx/BitChord) | ![Stars](https://img.shields.io/github/stars/kushagrasinghx/BitChord) | ![Downloads](https://img.shields.io/github/downloads/kushagrasinghx/BitChord/total) |
 | [Vivi Music](https://github.com/vivizzz007/vivi-music) | ![Stars](https://img.shields.io/github/stars/vivizzz007/vivi-music) | ![Downloads](https://img.shields.io/github/downloads/vivizzz007/vivi-music/total) |
 | [LastWave Native](https://github.com/Clash-Projects/LastWave-Native) | ![Stars](https://img.shields.io/github/stars/Clash-Projects/LastWave-Native) | ![Downloads](https://img.shields.io/github/downloads/Clash-Projects/LastWave-Native/total) |
@@ -53,14 +53,14 @@ InnerTubeX powers YouTube API access and stream extraction in a growing number o
 repositories {
     maven("https://jitpack.io") {
         content {
-            includeGroup("com.github.MetrolistGroup.innertubex")
-            includeGroup("com.github.MetrolistGroup.quackjs")
+            includeGroup("com.github.MuzikGroup.innertubex")
+            includeGroup("com.github.MuzikGroup.quackjs")
         }
     }
 }
 
 dependencies {
-    implementation("com.github.MetrolistGroup.innertubex:innertubex:v0.11.9")
+    implementation("com.github.MuzikGroup.innertubex:innertubex:v0.11.9")
 }
 ```
 
@@ -107,7 +107,7 @@ val stream = extractor.extract(
 
 ### Player cipher backend
 
-The common backend uses hosted `com.github.MetrolistGroup.quackjs:quackjs:0.1.4`,
+The common backend uses hosted `com.github.MuzikGroup.quackjs:quackjs:0.1.4`,
 without JavaScript engines, JNI, or bundled solver scripts. `preloadPlayerCode(url)`
 downloads and compiles the player off the UI thread; compiled programs are reused
 across batches and single calls. Unsupported players fail closed: affected formats
@@ -170,7 +170,7 @@ of `allTests`.
 ## Development
 
 To test changes in the sibling `../quackjs` checkout without changing the hosted
-dependency, pass `-PuseLocalQuackJS`. This also works when Metrolist includes
+dependency, pass `-PuseLocalQuackJS`. This also works when Muzik includes
 InnerTubeX with `-PuseLocalInnerTubeX -PuseLocalQuackJS`.
 
 Watch configs that advertise `player_es6` first try the standard `player_ias`

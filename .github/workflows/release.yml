@@ -37,7 +37,7 @@ jobs:
         run: >-
           ./gradlew clean allTests ktlintCheck apiCheck assemble
           publishToMavenLocal
-          -PGROUP=com.github.MetrolistGroup
+          -PGROUP=com.github.MuzikGroup
           -PPOM_ARTIFACT_ID=innertubex
           -PVERSION_NAME="$GITHUB_REF_NAME"
           --no-build-cache

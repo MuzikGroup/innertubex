@@ -13,7 +13,7 @@ any report.
 
 Use GitHub private vulnerability reporting:
 
-https://github.com/MetrolistGroup/innertubex/security/advisories/new
+https://github.com/MuzikGroup/innertubex/security/advisories/new
 
 Include reproduction steps with synthetic or redacted data, affected versions,
 and the expected impact. Maintainers will acknowledge the report through the

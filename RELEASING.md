@@ -6,10 +6,10 @@ token, namespace registration, or GPG key is required.
 
 ## One-Time Setup
 
-1. Create the public `MetrolistGroup/innertubex` GitHub repository.
+1. Create the public `MuzikGroup/innertubex` GitHub repository.
 2. Enable GitHub private vulnerability reporting.
 3. Protect the `main` branch and require the CI workflow.
-4. Confirm the repository is visible at https://jitpack.io/#MetrolistGroup/innertubex.
+4. Confirm the repository is visible at https://jitpack.io/#MuzikGroup/innertubex.
 
 ## Release Checklist
 
@@ -34,7 +34,7 @@ token, namespace registration, or GPG key is required.
 
    ```bash
    ./gradlew clean allTests ktlintCheck apiCheck assemble publishToMavenLocal \
-       -PGROUP=com.github.MetrolistGroup \
+       -PGROUP=com.github.MuzikGroup \
        -PPOM_ARTIFACT_ID=innertubex \
        -PVERSION_NAME=vMAJOR.MINOR.PATCH \
        --no-build-cache --no-configuration-cache
@@ -52,7 +52,7 @@ token, namespace registration, or GPG key is required.
 JitPack exposes `GROUP`, `ARTIFACT`, and `VERSION` to `jitpack.yml`. The build
 maps those values to Gradle publication properties so generated publications
 are exposed by JitPack as
-`com.github.MetrolistGroup.innertubex:innertubex:<tag>` for KMP consumers.
+`com.github.MuzikGroup.innertubex:innertubex:<tag>` for KMP consumers.
 
 ## Failed JitPack Builds
 
@@ -76,8 +76,8 @@ Check the build without triggering it early. Requesting a tag in the same
 command that pushes it can cache `tagNotFound` for several minutes.
 
 ```bash
-curl -s https://jitpack.io/api/builds/com.github.MetrolistGroup/innertubex/vMAJOR.MINOR.PATCH
-curl -s https://jitpack.io/com/github/MetrolistGroup/innertubex/vMAJOR.MINOR.PATCH/build.log
+curl -s https://jitpack.io/api/builds/com.github.MuzikGroup/innertubex/vMAJOR.MINOR.PATCH
+curl -s https://jitpack.io/com/github/MuzikGroup/innertubex/vMAJOR.MINOR.PATCH/build.log
 ```
 
 `"status" : "ok"` with a module list means it published. `"status" : "Error"`

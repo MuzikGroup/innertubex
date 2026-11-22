@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions are welcome through the `MetrolistGroup/innertubex` GitHub
+Contributions are welcome through the `MuzikGroup/innertubex` GitHub
 repository.
 
 ## Development Setup
@@ -31,7 +31,7 @@ Run the complete local gate before opening a pull request:
 
 ## Changes
 
-- Keep the library independent from Metrolist application settings, models,
+- Keep the library independent from Muzik application settings, models,
   databases, UI, and playback frameworks.
 - Add regression tests for protocol parsing, session handling, cipher changes,
   and SABR behavior.
