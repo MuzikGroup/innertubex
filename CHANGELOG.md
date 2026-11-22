@@ -10,9 +10,9 @@ that `0.x` releases may contain breaking API changes.
 
 ### Changed
 
-- **Breaking:** the Kotlin package was renamed from `com.metrolist.innertubex` to
-  `com.muzik.innertubex`. Update every `import` in consumer projects; the wire
-  behavior and API surface are unchanged.
+- **Breaking:** the Kotlin package namespace is now `com.muzik.innertubex` (previously
+  published under the legacy upstream namespace). Update every `import` in consumer
+  projects; the wire behavior and API surface are unchanged.
 
 ## [0.11.9] - 2026-11-17
 
